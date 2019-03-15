@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>summary</h3>
+    <section>
+        <h4>创建型模式</h4>
+        <dl>
+            <dt>工厂模式</dt>
+        </dl>
+    </section>
+    <h4>state和strategy</h4>
+    <dl>
+        <dt>相似</dt>
+        <dd>context绑定state/strategy</dd>
+        <dd>context接口实质调用state/strategy行为逻辑</dd>
+        <dt>不同</dt>
+        <dd>strategy：行为逻辑根据外部传入的策略类而改变</dd>
+        <dd>strategy与context关系不复杂，行为逻辑复杂在strategy部分</dd>
+        <dd>state：行为逻辑内部改变封装在内部</dd>
+        <dd>state行为和context行为耦合在一起</dd>
+        <dd>state行为封装context改变属性逻辑</dd>
+        <dd>state定义状态检查内部封装改变context state逻辑</dd>
+        <dd>context行为逻辑暴露给外部，内部实质调用state行为</dd>
+        <dd>context暴露改变state逻辑给state</dd>
+        <dt>优缺点</dt>
+        <dd>策略优点：逻辑简单，扩展性好，维护性好</dd>
+        <dd>策略缺点：策略类暴露给外部，策略类不能太多</dd>
+        <dd>状态优点：减少了大量条件语句；状态封装行为逻辑，多个环境可用同一状态</dd>
+        <dd>状态缺点：解构赋值，状态和环境耦合在一起，开闭原则不好，增加状态需要修改状态转换源码</dd>
+    </dl>
+</body>
+</html>
